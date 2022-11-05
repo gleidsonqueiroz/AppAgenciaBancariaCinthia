@@ -1,4 +1,4 @@
-package trabalho_Conta_Bancaria;
+package trabalhocontabancaria;
 import java.io.*;
 
 public class GravaArquivo {
@@ -10,14 +10,14 @@ public class GravaArquivo {
 	 * TODO Esta classe cria um objeto que e um arquivo para gravacao
 	 */
 	private FileWriter writer;
-	// objeto que representara o “gravador” de caracteres.
+	// objeto que representara o ï¿½gravadorï¿½ de caracteres.
 	private PrintWriter saida;
 	// objeto que possibilita escrever Strings no arquivo
-	// utilizando os métodos print() e println().
+	// utilizando os mï¿½todos print() e println().
 	/**
 	 * Construtor da classe
 	 * @param nome => nome do arquivo que sera aberto para gravacao
-	 * @throws IOException => Excecao se houver algum problema se o
+	 * @throws IOException => Excecao se houver algum problema se osadsa
 	 * arquivo nao puder ser aberto para gravacao
 	 */
 	
@@ -28,12 +28,12 @@ public class GravaArquivo {
 			// sobrescrito caso queira apenas acrescentar dados ao final
 			// do arquivo, deve usar true. Se o arquivo nao existir, cria um.
 			writer = new FileWriter(new File(nome), true);
-			// esse objeto significa que significando que 0 arquivo poderá
-			// sofrer inclusão de dados. O segundo argumento (opcional) indica
-			// (true) que os dados serão enviados para o arquivo a toda
-			// chamada do método println(), caso contrário, os dados só são
+			// esse objeto significa que significando que 0 arquivo poderï¿½
+			// sofrer inclusï¿½o de dados. O segundo argumento (opcional) indica
+			// (true) que os dados serï¿½o enviados para o arquivo a toda
+			// chamada do mï¿½todo println(), caso contrï¿½rio, os dados sï¿½ sï¿½o
 			// enviados quando voce enviar uma quebra de linha, fechar o
-			// arquivo ou mandar ele atualizar as mudanças (modo autoflush).
+			// arquivo ou mandar ele atualizar as mudanï¿½as (modo autoflush).
 			saida = new PrintWriter (writer);
 		}
 		catch (IOException e){

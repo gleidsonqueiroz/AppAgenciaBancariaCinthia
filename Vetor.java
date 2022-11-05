@@ -1,11 +1,15 @@
-package trabalho_Conta_Bancaria;
+package trabalhocontabancaria;
+
+import java.util.ArrayList;
 
 public interface Vetor {
 	
-	public void getTamanho(); 	// inteiro
-	public void getConta();		// double
-	public void insere();		// void
-	public void quicksort();	// 
-	public void shellsort();	//
+	public int getTamanho(); 	// inteiro
+	public Conta getConta(int pos);		// double
+	public void insere(Conta conta);		// void
+	//public void quicksort(String[] Vetor , int esquerda, int direita);	// antes estava public void quicksort() 
+	
+	public void quicksort(ArrayList<String[]> vetor, int esquerda, int direita);
+	public void shellsort(ArrayList<String[]> vetor);	//
 	 
 }

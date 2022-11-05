@@ -1,11 +1,12 @@
-package trabalho_Conta_Bancaria;
+package trabalhocontabancaria;
 
 public class ContaEspecial extends Conta { //implements Transacao{ nao precisa pois atraves da Classe Conta ira herda.
 
-	public double limte;
+	public double limite;
 		
-	public ContaEspecial(String nome, String cpf, int numero, double valor_na_conta) {
+	public ContaEspecial(String nome, String cpf, int numero, double valor_na_conta, double limite) {
 		super(nome, cpf, numero, valor_na_conta);
+		this.limite = limite;
 		// TODO Auto-generated constructor stub
 	}
 

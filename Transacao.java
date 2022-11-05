@@ -1,4 +1,4 @@
-package trabalho_Conta_Bancaria;
+package trabalhocontabancaria;
 
 public interface Transacao {
 	
